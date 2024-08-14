@@ -2,48 +2,40 @@
     font-family:Kanit;
     src: url(../fonts/Kanit-Bold.ttf);
 }
-
 @font-face {
     font-family: Roboto;
     src: url(../fonts/Roboto-Regular.ttf);
 }
-
 @font-face {
     font-family: Ubuntu;
     src: url(../fonts/Ubuntu-Medium.ttf);
 }
-
+@font-face{
+    font-family: Maguntia;
+    src:url(../fonts/UnifrakturMaguntia-Book.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
 body{
     margin: 0;
     box-sizing: border-box;
     padding: 0;
 }
-
 h2{
     font-family: "Ubuntu", sans-serif;
 }
-
-
 p{
     font-family: 'Roboto', sans-serif;
 }
-
-
-
 .header{
     min-height: 100vh;
-    
 }
-
 .nav{
     display: flex;
     background-color: black;
     align-items: center;
     justify-content: space-around;
     min-height: 10vh;
-
 }
-
 .boxMain{
     display: flex;
     min-height: 90vh;
@@ -61,8 +53,6 @@ p{
     display: flex;
     margin: 20px 0px 20px 0px;
 }
-
-
 .morbius{
     font-size: 3em;
     margin: 0px 0px 0px 40px;
@@ -73,24 +63,15 @@ p{
     align-items: center;
     flex-wrap: wrap;
 }
-.card{
-    width: 300px;
-   
-}
-
 .tittle{
     font-family: "Ubuntu", sans-serif;
 }
-
-
 a{
     color: white;
     font-family: "Ubuntu", sans-serif;
     text-decoration: none;
     margin: 50px;
 }
-
-
 .boxTeaser{
     display: flex;
     justify-content: center;
@@ -107,46 +88,38 @@ a{
     flex-direction: column;
     width: 40%;
 }
-
 .boxText h2{
     font-size: 2em;
 }
-
 .boxText p{
     width: 50%;
     font-size: 1.5em;
 }
-
 #img{
     width: 300px;
     height: 100px;
 }
-
-
-
 .movieImg{
     width: 50px;
     height: 50px;
 }
-
 #popular{
-    width: 100%;
+    max-width: 100%;
     min-height: 100vh;
+    align-items: center;
     display: flex;
-}
+    flex-direction: column;
+    
 
+}
 .titleSection{
     width: 100%;
     margin: 0px 0px 80px 0px;
-
 }
-
 .h2Section{
-    
     font-size: 3em;
     margin: 0px 0px 0px 40px;
 }
-
 .h2Section::before{
     position: absolute;
     content: '';
@@ -155,20 +128,338 @@ a{
     height: 6%;
     z-index: -1;
     transform: skew(-50deg);
-    
-
 }
-
-
 #popular .cartes > .card{
     margin: 10px;
 }
-
 .cartes{
-    display: flex;
-    width: 50%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.mySlider{
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .card h2{
-    margin: 0;
+    margin: 0px;
+    font-size: 1.2rem;
 }
+
+.card{
+    margin: 0px;
+    max-width: 200px;
+    
+}
+
+.rightArrow{
+    font-family: 'Maguntia', cursive ;
+    font-size: 7rem;
+    font-weight: 400;
+ 
+}
+
+.leftArrow{
+    font-family: 'Maguntia', cursive;
+    font-size: 7rem;
+}
+
+.controls {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;    
+    top: 150%;
+    transform: translatey(-50%);
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    
+}
+
+.itemSlide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls:focus{
+    outline: none;
+}
+
+button{
+    background-color: transparent;
+    border: 0px;
+}
+/*********************chris*************************/
+#upcoming{
+    max-width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.titleSection{
+    width: 100%;
+    margin: 0px 0px 80px 0px;
+}
+
+h2#h2Section3.h2Section3{
+    font-size: 5em;
+}
+.h2Section3{
+    font-size: 3em;
+    margin: 0px 0px 0px 40px;
+}
+.h2Section3::before{
+    position: absolute;
+    content: '';
+    background: #FBDD00;
+    width: 20%;
+    height: 6%;
+    z-index: -1;
+    transform: skew(-50deg);
+}
+
+
+#upcoming .cartes > .card{
+    margin: 10px;
+}
+.cartes{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.mySliderS{
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card h2{
+    margin: 0px;
+    font-size: 1.2rem;
+}
+
+.card{
+    margin: 0px;
+    max-width: 200px;
+    
+}
+
+.rightArrow{
+    font-family: 'Maguntia', cursive ;
+    font-size: 7rem;
+    font-weight: 400;
+ 
+}
+
+.leftArrow{
+    font-family: 'Maguntia', cursive;
+    font-size: 7rem;
+    
+   
+}
+
+.controls {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;    
+    top: 150%;
+    transform: translatey(-50%);
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    
+    }
+
+.itemSlide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls:focus{
+    outline: none;
+}
+
+button{
+    background-color: transparent;
+    border: 0px;
+}
+/*#upcoming{
+    max-width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#upcoming>.titleSection3{
+    width: 100%;
+    margin: 0px 0px 80px 0px;
+}
+.h2Section3{
+    font-size: 2em;
+    position: relative;
+}         
+.h2Section3::before{
+    position: absolute;
+    content: '';
+    background: #FBDD00;
+    width: 20%;
+    height: 6%;
+    z-index: -1;
+    transform: skew(-50deg);
+    left: calc(50% - 75%);
+}
+/*section box Films à venir*/
+/*#upcoming>.titleSection3{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: wrap;
+    margin-left: 50px;
+  }*/
+/*titre section Films à venir*/
+/*#upcoming>.titleSection3>.h2Section3{
+    color:black;
+    font-family: Ubuntu;
+    font-weight: 100;
+    font-size: 2em;
+    padding-left: 5px;
+    position: relative;
+}
+#upcoming>.titleSection3>.h2Section3::after{
+    position: absolute;
+    content: '';
+    background: #FBDD00;
+    width: 160%;
+    height: 110%;
+    z-index: -1;
+    transform: skew(-50deg);
+    left: calc(50% - 75%);
+}*/
+/*Icon Film*/
+.boxImgS3{
+    width: 2%;
+    height: 13%;
+}
+/*-**************Partie Carousel*****************************-*/
+.leftArrow{
+    left: 0;
+    opacity: 0.4;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+.rightArrow{
+    right: 0;
+    opacity: 0.4;
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+}
+.leftArrow:hover{
+    transform:rotate (0deg) scale(1.1) ;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+.rightArrow:hover{
+    transform:rotate (180deg) scale(1.1) ;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+/*-******************Partie section Bande Annonce**********-*/
+#bandeFilm{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+#boxBandeFilm{
+    width: 100%;
+    height: 25vh;
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#boxBande1{
+    width: 100%;
+    min-height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+#boxBande1>.bande1{
+   color:white;
+   font-family: Ubuntu;
+   font-size: 3.125em;
+   margin-left: 20px;
+   margin-bottom: -40px;
+}
+#boxBande2{
+    width: 100%;
+    min-height:15vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+#boxBande2>.bande2{
+    color:white;
+    font-family: Ubuntu;
+    font-size: 2.5em;
+    margin-left: 20px;
+}
+.boxCarreJaune{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction:row;
+    background: blueviolet;
+}
+.boxCarreJaune>.carre1{
+    height: 40px;
+    width: 40px;
+    background: var(--jaune);
+    margin-top: -120px;
+}
+.boxCarreJaune>.carre2{
+    height: 40px;
+    width: 40px;
+    background:var(--jaune);
+    margin-top: -40px;
+}
+#boxBandeH3{
+    width: 100%;
+    height: 85vh;
+    display:flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+#boxBandeH3>.bandeH3{
+    font-family: Roboto;
+    font-size: 1.563em;
+    margin-left: 20px;
+    margin-top: 75px;
+}
+#boxBandeH3>.bandeImg{
+    width: 100%;
+    height: 70vh;
+}
+
